@@ -4,21 +4,14 @@ import { throwToast } from '../functions';
 
 import { getFileFromChunks, FileChunker } from '../functions';
 
-const prodConfig = {
-    host: '/',
-    secure: true,
-    port: 443,
-    path: '/signaller',
-    debug: 1
-};
 
-// const prodConfig = {
-//     host: '192.168.43.88',
-//     secure: false,
-//     port: 9000,
-//     path: '/myapp',
-//     debug: 0
-// };
+const prodConfig = {
+    host: "localhost",
+    secure: false,
+    port: 9000,
+    path: '/myapp',
+    debug: 3 // Prefer max verbosity on development environment
+};
 
 const nameGeneratorConfig = {
     dictionaries: [adjectives, animals],
